@@ -1,0 +1,36 @@
+ /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300&display=swap'); */
+ /* font-family: 'Noto Sans KR', sans-serif; */
+
+.footer{
+    background-color: var(--color-base-5);
+    color: var(--color-base-0);
+    padding: var(--gap-5);
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    /* position: fixed;
+    bottom:0; */
+   
+    .footer dl{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap:8px 5px; 
+        /*  수직  수평 */
+    }
+    .footer dt{
+
+            justify-self:right;
+            
+        }
+        
+    .footer dt::after{
+        content:":"
+    }
+
+    .footer dt,
+    .footer dd{
+        display: inline-block;
+       
+    }
+}

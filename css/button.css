@@ -1,0 +1,72 @@
+.btn{
+    background-color: var(--color-base-9);
+    color:var(--color-font-6);
+    padding: 5px 16px;
+    border-color:var(--color-main-9);
+}
+.btn-main{
+    background-color: var(--color-base-5);
+    color:var(--color-base-0);
+    padding: 8px 20px;
+    border:none;
+    font-weight: bold;
+    border-radius: var(--radius-1)
+    /*list-style: none;*/
+}
+
+.btn-accent{
+    --radius:15px;
+    width: calc(var(--radius) * 2);
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--color-base-5);
+}
+
+/* .스타일{  /* .은 클래스?? 
+
+} */
+
+.img-btn-menu{
+    width: 24px;
+    height: 24px; 
+    display: inline-block;
+    /* 인라인이라서 너비랑 높이가 설정이 안됨 
+    이럴때는 display를 block(한줄을 다 차지함) 또는 
+    inline-block사용(너비, 높이 다 가지고,한줄에 나란히 다른내용과사용가능) */
+
+    overflow:hidden;
+    /*  박스 밖에 벗어난걸 처리하는 속성   overflow에 hidden사용*/
+
+    text: indent -999px;
+    /* 텍스트 앞에 문단들여쓰기를 하는속성 text-indent */
+
+    background-image:url(/Public/image/icon/person.svg);
+    background-repeat: no-repeat;
+    background-position:left top;
+
+}
+
+.btn-icon{
+    padding: 0;
+   
+}
+
+.btn-disable{
+    background-color: var(color aquamarine);
+}
+
+
+
+@media (min-width:400px) {
+    .btn-md{
+        width:100px;
+        height:300px;
+        background-color: var(color aquamarine);
+    }
+    .md\:btn-main{
+        border-radius: 0;
+    }
+
+    
+}
+

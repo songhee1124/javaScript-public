@@ -1,0 +1,21 @@
+/* 기존의 스타일이 맘에 들지 않을때 기본으로 설정하게다 하는 곳 */
+html
+,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Noto sans,sans-serif';
+    font-size: 14px;
+    color: var(--color-base-9);
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    /* justify-content: space-between;  */
+    /* 무슨 차이가 잇지? */
+}
+
+main{
+    flex-grow:1;
+}

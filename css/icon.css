@@ -1,0 +1,209 @@
+ .icon{
+    display:inline-block;
+    width:var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size:var(--icon-size-1);
+
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    border:none;
+    background-color: transparent; 
+    /* background-color: aqua; */
+    /* 투명화 */
+}
+
+.deco{
+    display: inline-flex;
+    /* 블럭이 아니라서 사이즈가 안늘어남 flex는 방이다. */  
+}
+
+.icon-hover:hover::before{
+    background-color: var(--color-accent-1);
+}
+
+
+
+.icon-size\:1{
+    width:var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size:var(--icon-size-1);
+}
+
+.icon-size\:2{
+    width:var(--icon-size-2);
+    height: var(--icon-size-2);
+    background-size:var(--icon-size-2);
+}
+
+.icon-size\:3{
+    width:var(--icon-size-3);
+    height: var(--icon-size-3);
+    /* background-size:var(--icon-size-3);  마스크를 사용하면 의미없음 */
+    -webkit-mask-size : var(--icon-size-3);
+    mask-size: var(--icon-size-3); 
+}  
+.icon-size\:4{
+    width:var(--icon-size-4);
+    height: var(--icon-size-4);
+    /* background-size:var(--icon-size-3);  마스크를 사용하면 의미없음 */
+    -webkit-mask-size : var(--icon-size-4);
+    mask-size: var(--icon-size-4); 
+}  
+
+
+.deco-icon-size\:1::before{
+    width:var(--icon-size-1);
+    height: var(--icon-size-1);
+    background-size:var(--icon-size-1);
+}
+
+.deco-icon-size\:2::before{
+    width:var(--icon-size-2);
+    height: var(--icon-size-2);
+    background-size:var(--icon-size-2);
+}
+
+.deco-icon-size\:3::before{
+    width:var(--icon-size-3);
+    height: var(--icon-size-3);
+    /* background-size:var(--icon-size-3);  마스크를 사용하면 의미없음 */
+    -webkit-mask-size : var(--icon-size-3);
+    mask-size: var(--icon-size-3); 
+}  
+
+.icon::before{
+    content:'';
+    display:inline-block; 
+    width:inherit; /*상속받았다는 표현*/
+    height:inherit;
+    /* background-image: url(/image/icon/settings.svg);  
+    background-size:inherit; 배경 사이즈 */
+    /* vertical-align:auto;  이거 뭐지???? */ 
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size:inherit;
+    mask-size:inherit;
+    background-color: var(--color-base-12);
+   
+}
+
+.deco::before{
+    content:'';
+    display:inline-block; 
+    width:var(--icon-size-1);
+    height: var(--icon-size-1);
+    /* background-image: url(/image/icon/settings.svg);  
+    background-size:inherit; 배경 사이즈 */
+    /* vertical-align:auto;  이거 뭐지???? */ 
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size:inherit;
+    mask-size:inherit;
+    background-color: var(--color-base-12);
+   margin-right:5px;
+}
+
+
+
+.icon-color\:base-0::before{
+    background-color: var(--color-base-0);  
+}
+.icon-color\:main::before{
+    background-color: var(--color-base-12);  
+}
+.icon-color\:accent::before{
+    background-color: var(--color-accent-1);
+}
+.icon-count-with{
+    position: relative;
+   
+}
+.icon-count-with span:last-child{     
+    /*   with뒤에 *생략(*은 모든것을 뜻함) */
+    font-size: 12px;
+    
+    position: absolute;
+    left: 5px;
+    top: 2px;
+   
+   background-color: red;
+    height: 14px;
+    width: 14px;
+   
+    /* line-height: 11px; */
+    border-radius: 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon-settings::before{
+    /* background-color: red; */
+    -webkit-mask-image:url(/image/icon/alert.svg);
+    mask-image:url(/image/icon/settings.svg);
+    /* 아이콘을 여러가지 쓰느데 색을 다양하게 하고 싶어서  */
+    /* background-image:url(/Public/image/icon/icon-settings); */
+}
+
+
+.icon-person::before{
+    /* background-image: url(/Public/image/icon/person.svg); */
+    -webkit-mask-image:url(/image/icon/person.svg);
+       mask-image:url(/image/icon/person.svg);
+   }
+
+.icon-cart::before{
+-webkit-mask-image:url(/image/icon/cart.svg);
+    mask-image:url(/image/icon/cart.svg );
+}
+.icon-alert::before{
+-webkit-mask-image:url(/image/icon/alert.svg);
+    mask-image:url(/image/icon/alert.svg);
+}
+.icon-sign_out::before{
+-webkit-mask-image:url(/image/icon/sign-out.svg);
+    mask-image:url(/image/icon/sign-out.svg);
+}
+.icon-menu::before{
+    -webkit-mask-image:url(/image/icon/menu.svg);
+    mask-image:url(/image/icon/menu.svg);
+    }
+
+.icon-filter_list::before{
+    -webkit-mask-image:url(/image/icon/filter_list.svg);
+    mask-image:url(/image/icon/filter_list.svg);
+   
+    -webkit-mask-position:center -3px;
+    mask-position:center -3px;
+    }
+
+.icon-person:hover::before {
+    background-color: red;
+    }
+@media (min-width: 700px) {
+    
+    .md\:icon-size\:1 {
+        width: var(--icon-size-1);
+        height: var(--icon-size-1);
+        background-size: var(--icon-size-1);
+    }
+    .md\:icon-size\:2 {
+        width: var(--icon-size-2);
+        height: var(--icon-size-2);
+        background-size: var(--icon-size-2);
+    }
+    .md\:icon-size\:3 {
+        width: var(--icon-size-3);
+        height: var(--icon-size-3);
+        background-size: var(--icon-size-3);
+    }
+
+    .md\:deco {
+         
+    }
+    .md\:deco::before {
+        display: none;
+        /* display:none하면 전체가 사라짐 */
+    }
+}

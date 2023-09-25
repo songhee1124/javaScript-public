@@ -1,0 +1,102 @@
+.unique-menu{
+    width: 360px;
+    
+    background-color:
+    #181614;
+    padding: 60px,0px,60px,0px;
+    display: flex;
+    flex-direction: column;
+}
+.unique-menu
+     .card{
+       display: flex;
+       flex-direction: column;
+       /* 이거 기억 안남 알아볼것 */
+    color: #e2e2e2;
+     font-size: 14px;
+     margin: 30px;
+       }
+
+.unique-menu .card h1{
+    font-size: 24px;
+    font-weight: bold;
+    word-break:keep-all;
+    margin-bottom: 8px; ;
+}    
+
+.unique-menu .card span{
+    color: #d86259;
+}
+
+.unique-menu .card .fruit-img{
+    margin-top: 24px;
+    width: 240px;
+    height: 180px;
+}
+@media(min-width:700px){
+    .unique-menu{
+        width: 1440px;
+        height: 1012px;
+        position: fixed;
+        background-color: #251404;
+        flex-direction: column;
+    }
+    .unique-rland{
+        font-weight: 700;
+        height: 49px;
+        font-size: 36px;
+        color: #F1F1F1;
+        text-align: center;
+        margin-bottom: 105px;
+        margin-top: 135px;
+       
+    }
+    
+    .unique-rland:after{
+        content: "    ";
+        position: absolute;
+        left: 685px;
+        bottom: 805px;
+        height: 5px;
+        width: 100px;
+        background-color: #F1F1F1;
+      }
+        
+    
+    .unique-menu .card{
+        width: 370px;
+        height: 588px;
+        background-color: #F2F3F4;
+        color: #383A35;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px 950px 135px 120px;
+       
+    }
+    .card-h1{
+        margin-top:59px;
+        font-weight: bold;
+    }
+
+    .card-p{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 16px;
+        font-size: 16px;
+        text-indent : 0px;
+    }
+    .unique-menu .card .fruit-img{
+        width: 370px;
+        height: 305px;
+        margin-top: 0; 
+    }
+    .unique-menu .card >p:last-child{
+      order: -1;  
+    }
+
+    
+    
+
+
+}
