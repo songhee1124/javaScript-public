@@ -1,0 +1,94 @@
+.menu-card {
+  height: 80px;
+
+  display: grid;
+  grid-template-columns: 80px 1fr 60px;
+  grid-template-rows: 20px 20px 1fr 30px;
+  column-gap: var(--gap-4);
+  /* 컬럼 방향으로만 갭을 주는거 */
+}
+
+.menu-card .img-block {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+
+  width: 80px;
+  height: inherit;
+}
+.menu-card .img-block * {
+  width: inherit;
+  height: inherit;
+}
+
+.menu-card img {
+  object-fit: cover;
+}
+
+.menu-card h1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.menu-card h2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.menu-card .price-block {
+  grid-column: 2;
+  grid-row: 4;
+}
+.menu-card .like-block {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.menu-card .pay-block {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+@media (min-width: 700px) {
+  .menu-card {
+    width: 225px;
+
+    display: grid;
+    grid-template-columns: 1fr 60px 60px;
+    grid-template-rows: 180px 20px 1fr 30px;
+    row-gap: var(--gap-1);
+  }
+  .menu-card .img-block {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+
+    width: inherit;
+    height: 180px;
+  }
+  .menu-card .img-block * {
+    width: inherit;
+    height: inherit;
+  }
+  .menu-card h1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .menu-card h2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .menu-card .price-block {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .menu-card .like-block {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: right;
+  }
+  .menu-card .pay-block {
+    grid-column: 3;
+    grid-row: 4;
+    display: flex;
+    justify-content: right;
+  }
+}

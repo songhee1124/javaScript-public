@@ -1,0 +1,27 @@
+.heading-1 {
+  font-family: "Noto sans,sans-serif";
+  font-size: 8px;
+  font-weight: bold;
+  color: var(--color-base-9);
+}
+
+.heading-2 {
+  font-family: "Noto sans,sans-serif";
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-base-9);
+}
+
+.heading-3 {
+  font-family: "Noto sans,sans-serif";
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-base-9);
+}
+
+.heading-4 {
+  font-family: "Noto sans,sans-serif";
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-base-9);
+}
